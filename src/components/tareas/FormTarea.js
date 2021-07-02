@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContex } from 'react';
 import proyectoContext from '../../context/proyectos/proyectoContext';
 
 
@@ -13,10 +13,24 @@ const FormTarea = () => {
 
     //Array destructuring para extraer el proyecto actual
     const [proyectoActual] = proyecto;
+
+    const onSubmit = e => {
+        e.preventDefault();
+
+        //Validad
+
+        //Pasar la validacion
+
+        //Agregar la nueva tarea al state de tareas
+
+        //Reiniciar el form
+    }
     
     return ( 
         <div className="formulario">
-            <form>
+            <form
+                onSubmit={onSubmit}
+            >
                 <div className="contenedor-input">
                     <input
                         type="text"
